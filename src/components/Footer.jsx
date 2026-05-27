@@ -1,5 +1,6 @@
 import { Facebook, Instagram, Linkedin, MessageCircle } from 'lucide-react';
 import { clinicInfo, navLinks, whatsappUrl } from '../data';
+import ToothLogo from './ToothLogo';
 
 export default function Footer() {
   return (
@@ -7,7 +8,9 @@ export default function Footer() {
       <div className="container-page grid gap-10 py-12 md:grid-cols-[1.2fr_0.8fr_1fr]">
         <div>
           <div className="flex items-center gap-3">
-            <span className="grid h-11 w-11 place-items-center rounded-lg bg-aqua text-lg font-extrabold text-navy">SP</span>
+            <span className="grid h-11 w-11 place-items-center rounded-lg bg-aqua text-navy">
+              <ToothLogo className="h-7 w-7" />
+            </span>
             <span className="text-lg font-extrabold">{clinicInfo.name}</span>
           </div>
           <p className="mt-4 max-w-md text-sm leading-6 text-slate-300">

@@ -1,6 +1,7 @@
 import { Menu, MessageCircle, X } from 'lucide-react';
 import { useState } from 'react';
 import { clinicInfo, navLinks, whatsappUrl } from '../data';
+import ToothLogo from './ToothLogo';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,8 +12,8 @@ export default function Header() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-slate-100 bg-white/92 backdrop-blur-xl">
       <div className="container-page flex h-20 items-center justify-between">
         <a href="#inicio" className="flex items-center gap-3" onClick={closeMenu}>
-          <span className="grid h-11 w-11 place-items-center rounded-lg bg-navy text-lg font-extrabold text-white">
-            SP
+          <span className="grid h-11 w-11 place-items-center rounded-lg bg-navy text-aqua">
+            <ToothLogo className="h-7 w-7" />
           </span>
           <span className="leading-tight">
             <span className="block text-base font-extrabold text-navy sm:text-lg">{clinicInfo.name}</span>
